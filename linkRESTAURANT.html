@@ -1,1 +1,146 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recommended Restaurants - ThaiFoodDelight</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 20px;
+      }
+      .container {
+        max-width: 1000px;
+        margin: auto;
+      }
+      h2 {
+        color: #d35400;
+        text-align: center;
+      }
+      .restaurant-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        margin-top: 30px;
+      }
+      .card {
+        background: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        background-color: #ddd;
+      }
+      .card-content {
+        padding: 15px;
+      }
+      .card-title {
+        font-size: 1.2em;
+        font-weight: bold;
+        margin: 0 0 10px;
+        color: #2c3e50;
+      }
+      .price {
+        color: #27ae60;
+        font-weight: bold;
+      }
+      .rating {
+        color: #f1c40f;
+        margin: 5px 0;
+      }
+      .review {
+        font-size: 0.9em;
+        color: #7f8c8d;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>ร้านอาหารแนะนำใกล้เคียง</h2>
+      <div class="restaurant-grid">
+        <div class="card">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVRJfZRAko0rYYwalR5vHeIb0F0w_h5T1Ncw&s"
+            alt="ข้าวซอยคุณยาย"
+          />
+          <div class="card-content">
+            <div class="card-title">ข้าวซอยคุณยาย</div>
+            <div class="price">ราคา: 50 - 100 บาท</div>
+            <div class="rating">⭐⭐⭐⭐⭐ (4.5/5)</div>
+            <p class="review">
+              "ข้าวซอยระดับตำนาน รสชาติเข้มข้นถึงใจ ราคาเป็นกันเอง"
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://f.ptcdn.info/566/082/000/s5a2t263uvf0T1FebJR7-o.png"
+            alt="ต๋อง เต็ม โต๊ะ"
+          />
+          <div class="card-content">
+            <div class="card-title">ต๋อง เต็ม โต๊ะ (Tong Tem Toh)</div>
+            <div class="price">ราคา: 100 - 250 บาท</div>
+            <div class="rating">⭐⭐⭐⭐ (4.2/5)</div>
+            <p class="review">
+              "ร้านดังย่านนิมมาน อาหารเหนือฟิวชั่น บรรยากาศดีมาก"
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsBtuUIQkRuomiebVDSMJm_BmbU12eeCMVxw&s"
+            alt="Ginger Farm Kitchen"
+          />
+          <div class="card-content">
+            <div class="card-title">Ginger Farm Kitchen</div>
+            <div class="price">ราคา: 200 - 500 บาท</div>
+            <div class="rating">⭐⭐⭐⭐⭐ (4.6/5)</div>
+            <p class="review">
+              "วัตถุดิบสดจากฟาร์ม จัดจานสวยงาม เหมาะกับการถ่ายรูป"
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwoBv7WGdfS6db3W1e9qnGoXFy8F6j-WM1lA&s"
+            alt="SP ไก่ย่าง"
+          />
+          <div class="card-content">
+            <div class="card-title">SP ไก่ย่าง</div>
+            <div class="price">ราคา: 80 - 200 บาท</div>
+            <div class="rating">⭐⭐⭐⭐ (4.4/5)</div>
+            <p class="review">
+              "ไก่ย่างหมุนสูตรเด็ด หนังกรอบ เนื้อฉ่ำ หอมสมุนไพร"
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-rvSVWjduoY85YJThv3dCFKH1Gh9Bvxd8PA&s"
+            alt="เฮือนม่วนใจ๋"
+          />
+          <div class="card-content">
+            <div class="card-title">เฮือนม่วนใจ๋</div>
+            <div class="price">ราคา: 150 - 350 บาท</div>
+            <div class="rating">⭐⭐⭐⭐ (4.3/5)</div>
+            <p class="review">
+              "การันตีโดยมิชลินไกด์ รสชาติอาหารเหนือแบบดั้งเดิมแท้ๆ"
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
 
